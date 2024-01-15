@@ -2,7 +2,7 @@
 #!desc=YouTube去广告支持小窗
 #!author=Maasea
 #!update=2023-12-21 18:40
-#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1062.png
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
 
 [URL Rewrite]
 # YouTube播放页广告
