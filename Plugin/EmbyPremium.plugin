@@ -1,0 +1,12 @@
+#!name=Emby:Premium
+#!desc=Emby解锁Premium播放权限
+#!author=阿群
+#!update=2023-12-21 18:40
+#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/softlyx/Emby.png
+
+[Script]
+# Emby解锁播放权限
+http-request ^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey) script-path=https://raw.githubusercontent.com/qiangxinglin/Emby/main/scripts/emby.js, timeout=60, tag=emby
+
+[MITM]
+hostname = mb3admin.com
