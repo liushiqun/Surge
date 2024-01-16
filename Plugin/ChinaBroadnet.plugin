@@ -14,4 +14,4 @@ http-request https://wx.10099.com.cn/contact-web/api/busi/qryUserInfo script-pat
 cron "3 0 * * *" script-path=https://github.com/wuhuhuuuu/study/raw/main/Scripts/ChinaBroadnet/ChinaBroadnet.js, timeout=10, tag=中国广电(余额), img-url=https://raw.githubusercontent.com/liushiqun/Loon/main/PNG/ChinaBroadnet.png
 
 [MITM]
-hostname = rr*.googlevideo.com, youtubei.googleapis.com
+hostname = wx.10099.com.cn
