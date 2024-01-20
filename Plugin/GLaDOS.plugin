@@ -5,9 +5,10 @@
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/GlaDos.png
 
 [Script]
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/glados.js, timeout=20, tag=GLaDOS签到
+[Script]
+cron "5 0 * * *" tag=GLaDOS签到, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/glados.js
 
-http-request https:\/\/glados\.rocks\/api\/user\/checkin script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/glados.js, tag=获取GLaDOS:Cookie
+http-request https:\/\/glados\.rocks\/api\/user\/checkin tag=获取GLaDOS_Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/glados.js
 
 [MITM]
 hostname = glados.rocks
