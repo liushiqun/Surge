@@ -1,5 +1,5 @@
 #!name=中国广电
-#!desc=获取Cookie,定时查询余额
+#!desc=获取Cookie,定时查询余额,是通知信息脚本, 每天00:03:00执行一次.
 #!author=阿群
 #!update=2023-12-21 18:40
 #!icon=https://raw.githubusercontent.com/liushiqun/Loon/main/PNG/ChinaBroadnet.png
