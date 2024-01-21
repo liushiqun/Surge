@@ -1,5 +1,5 @@
 #!name=TestFlight自动加入
-#!desc=TF_appIds
+#!desc=脚本功能: 自动加入TestFlight，使用重写自动获取tf_appIds，tf_account_key
 #!icon=https://raw.githubusercontent.com/Orz-3/mini/master/Color/testflight.png
 
 [Script]
