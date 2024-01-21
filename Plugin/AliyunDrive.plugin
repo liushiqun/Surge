@@ -1,0 +1,14 @@
+#!name=阿里云盘
+#!desc=阿里云盘定时签到token获取。
+#!author=阿群
+#!icon=https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/ALiYun.png
+
+[Script]
+# 阿里云盘token获取
+http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js, requires-body=true, timeout=10, enabled=true, tag=阿里网盘token获取
+# 阿里云盘定时签到
+cron "12 0 * * *" script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js, tag=阿里云盘签到
+# 阿里云盘定时签到（修改）
+cron "0 7,11,17 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, timeout=300, tag=阿里云签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/AliYunDrive.png
+[MITM]
+hostname = auth.alipan.com, auth.aliyundrive.com
