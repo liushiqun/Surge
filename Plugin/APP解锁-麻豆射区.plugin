@@ -1,0 +1,8 @@
+#!name=APP解锁-麻豆射区
+#!desc=解锁会员权限，无限观看视频，打开APP需要等待一下！
+
+[Script]
+http-response http[s]?://.*(yal09zp|yuwhuxuw|d4s000ejiic|uzro0z3|bytebwq|qrneryt|dirptev|saejeuj|4bmqesfias9|epn54fk5njw|djsusdjexs4|zxt9kf4c|djqyarm|cmmsjbu|iomaqzd|ledyqrr|oenwfkbaamamdq|irkkykyrabxiej).+/api/app/(ping/config|media/(play|homev2|short/recommend)|user/info) script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/mdsq.js, requires-body=true, timeout=60, tag=mdsq
+
+[MITM]
+hostname = *bytebwq.com, *qrneryt.com, *dirptev.com, *saejeuj.com, *uzro0z3.com, *d4s000ejiic.com, *yuwhuxuw.com, *yal09zp.com, *.4bmqesfias9.com, *.epn54fk5njw.com, *.djsusdjexs4.com, *.zxt9kf4c.com, *.djqyarm.com, *.cmmsjbu.com, *.iomaqzd.com, *.ledyqrr.com, *.oenwfkbaamamdq.com, *.irkkykyrabxiej.com
