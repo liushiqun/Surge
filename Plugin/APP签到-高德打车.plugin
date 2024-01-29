@@ -1,0 +1,11 @@
+#!name=高德打车
+#!desc=高德地图-打车-福利中心/获取Cookie，每日2点签到。
+#!icon=https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/gaode.png
+
+[Script]
+http-response ^https:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, requires-body=true, timeout=60, tag=ampDache
+
+cron "1 2 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, timeout=60, tag=ampDache
+
+[MITM]
+hostname = *.amap.com
