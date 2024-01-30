@@ -13,41 +13,7 @@ https:\/\/member\.aliyundrive\.com\/v2\/activity\/sign_in_luckyBottle - reject
 
 [Script]
 # 阿里云盘本地会员
-http-response https:\/\/api\.(aliyundrive|alipan)\.com\/apps\/v1\/users\/apps\/welcome script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/api\.(aliyundrive|alipan)\.com\/v2\/databox\/get_personal_info script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1.0\/users\/vip\/info script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/member\.(aliyundrive|alipan)\.com\/v1\/users\/tools script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1\/users\/me\/vip\/info script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1.1\/users\/me\/vip\/info script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/api\.(aliyundrive|alipan)\.com\/apps\/v1\/users\/home\/widgets script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/api\.(aliyundrive|alipan)\.com\/adrive\/v1\/app\/logos script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/api\.(aliyundrive|alipan)\.com\/adrive\/v2\/user\/get script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1.0\/users\/feature\/list script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/api\.(aliyundrive|alipan)\.com\/business\/v1.0\/users\/feature\/trial script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/api\.(aliyundrive|alipan)\.com\/v2\/file\/get_video_preview_play_info script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/api\.(aliyundrive|alipan)\.com\/adrive\/v2\/batch script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_info script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/member\.aliyundrive\.com\/v2\/activity\/sign_in_list script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/member\.alipan\.com\/v1\/users\/me script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/api\.alipan\.com\/adrive\/v1\/timeline\/user\/get script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
-
-http-response https:\/\/api\.alipan\.com\/apps\/v1\/users\/home\/recent script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/alic.js, requires-body=true, timeout=60, tag=alic
+http-response ^https:\/\/(api|member)\.aliyundrive\.com\/(adrive|v1|v2|business|databox)\/.+\/(me|vip|feature|info|get_personal_info|driveCapacityDetails) script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/debug/aDriveCrack/aDriveCrack_test.js, requires-body=true, timeout=10, enabled=true, tag=阿里云盘会员
 
 # 阿里云盘token获取
 
