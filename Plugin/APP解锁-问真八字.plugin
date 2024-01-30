@@ -1,0 +1,8 @@
+#!name=APP解锁-问真八字
+#!desc=解锁钻石会员权限,非一次性解锁！
+
+[Script]
+http-response ^https:\/\/bzpp2\.iwzbz\.com\/api\/v1\.1\/user\/getvipinfo script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/wZbz.js, requires-body=true, timeout=60, tag=wZbz
+
+[MITM]
+hostname = bzpp2.iwzbz.com
