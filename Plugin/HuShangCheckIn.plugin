@@ -2,7 +2,7 @@
 #!desc=打开微信沪上阿姨小程序-我的-获取Cookie
 #!author=阿群
 #!update=2023-12-21 18:40
-#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/GlaDos.png
+#!icon=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hsay.png
 
 [Script]
 cron "30 9 * * *" script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/hsay.js, timeout=300, tag=沪上阿姨
