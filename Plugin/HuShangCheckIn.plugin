@@ -1,0 +1,10 @@
+#!name=沪上阿姨小程序:签到
+#!desc=hsay
+
+[Script]
+cron "30 9 * * *" script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/hsay.js, timeout=300, tag=沪上阿姨
+
+http-request ^https:\/\/webapi.qmai.cn\/web\/catering\/crm\/points-info script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/hsay.js, timeout=10, tag=沪上阿姨获取token
+
+[MITM]
+hostname = webapi.qmai.cn
