@@ -6,14 +6,16 @@
 #!date = 2023-12-21 18:49:17
 
 [Rewrite]
-# 使用reject-200方法以减少开销
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad reject-200
+# 播放页广告
+^https:\/\/[\w-]+\.googlevideo\.com\/initplayback\?.+&oad - reject-dict
 
 [Script]
-# YouTube去广告 - 来自Maasea的作品
-http-request ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/YouTube/YouTube_remove_ads_request.js, requires-body = true, binary-body-mode = true, tag = YouTube请求
+# 请求体
+http-request ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence) script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/youtube/request.js, requires-body=true, binary-body-mode=true, timeout=60, tag=request
 
-http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/YouTube/YouTube_remove_ads_response.js, requires-body = true, binary-body-mode = true, tag = YouTube响应
+# 响应体
+http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting) script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/youtube/response.js, requires-body=true, binary-body-mode=true, timeout=60, tag=response
 
-[Mitm]
-hostname = *.googlevideo.com, youtubei.googleapis.com
+[MITM]
+hostname = rr*.googlevideo.com, youtubei.googleapis.com
+
